@@ -24,6 +24,7 @@ def home():
 def register():
     if request.method == 'POST':
         name = request.form.get("name")
+        print(name)
         mobile = request.form.get("mobile")
         email = request.form.get("email")
         passwd = request.form.get("password")
